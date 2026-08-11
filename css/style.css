@@ -1197,6 +1197,11 @@ a {
 }
 
 @media (max-width: 600px) {
+    .site-header {
+        flex-basis: calc(52px + env(safe-area-inset-top, 0px));
+        padding-top: max(12px, env(safe-area-inset-top, 0px));
+    }
+
     .site-nav {
         width: 100%;
         padding-inline: 8px;
