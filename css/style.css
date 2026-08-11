@@ -97,6 +97,7 @@ a {
 
 .site-nav__reviews {
     font-family: "Lora", Georgia, serif;
+    transform: translateY(-2px);
 }
 
 .hero {
@@ -1364,15 +1365,18 @@ a {
     }
 
     .why-heels__art img {
-        transform: scale(1.08) translateY(2%);
+        transform: none;
     }
 
     .why-heels__title {
+        position: relative;
         z-index: 3;
         top: auto;
-        right: 12px;
-        bottom: 28px;
-        left: 12px;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        width: 100%;
+        padding: 0 12px 28px;
         gap: 10px;
     }
 
