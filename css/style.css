@@ -1350,12 +1350,12 @@ a {
 
     .why-heels__art {
         position: relative;
-        left: -1px;
+        left: 50%;
         bottom: auto;
         width: 400px;
         margin-top: 20px;
         flex: 0 0 auto;
-        transform: none;
+        transform: translateX(-50%);
     }
 
     .why-heels__art img {
