@@ -827,14 +827,36 @@ a {
     background: url("../assets/slider-bg.webp") center / cover no-repeat;
 }
 
-.review-card {
+.reviews__track {
     width: min(100%, 550px);
+}
+
+.review-card {
+    width: 100%;
+    height: clamp(217px, 20.313vw, 390px);
     min-height: clamp(217px, 17.188vw, 330px);
     padding: clamp(12px, 1.563vw, 30px);
+    overflow: hidden;
     color: #111111;
     background: #ffffff;
     border-radius: 10px;
     text-transform: none;
+}
+
+.review-card.is-active {
+    animation: review-card-in 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes review-card-in {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .review-card header {
@@ -863,6 +885,19 @@ a {
 
 .review-card__body p + p {
     margin-top: 16px;
+}
+
+.review-card--video .review-card__body {
+    margin-top: clamp(14px, 1.25vw, 24px);
+}
+
+.review-card__video {
+    display: block;
+    width: 100%;
+    height: clamp(145px, 13.542vw, 260px);
+    border-radius: 5px;
+    object-fit: contain;
+    background: #000000;
 }
 
 .reviews__controls {
@@ -1612,7 +1647,9 @@ a {
 
     .hero__cta,
     .site-nav a,
-    .faq-item__answer {
+    .faq-item__answer,
+    .review-card.is-active {
         transition: none;
+        animation: none;
     }
 }

@@ -253,26 +253,76 @@
                 </div>
 
                 <div class="reviews__slider">
-                    <article class="review-card">
-                        <header>
-                            <h3>Demi</h3>
-                            <p>Vlada Fotko Course</p>
-                            <time datetime="2026">2026</time>
-                        </header>
-                        <div class="review-card__body">
-                            <p>I can't say enough amazing things about my dance instructor. After just four classes, I already feel a shift — not just in my movement, but in my confidence and emotional expression. Every hour I spend with her is a chance to lock in, let go, and grow.</p>
-                            <p>She challenges me in the best way possible. She doesn't let you settle — she pushes you to strive for your personal best and to reach for perfection, and somehow she does it with so much grace and encouragement. Her energy is magnetic, her skills are unmatched, and the way she leads is truly inspiring.</p>
-                        </div>
-                    </article>
+                    <div class="reviews__track" aria-live="polite">
+                        <article class="review-card is-active">
+                            <header>
+                                <h3>Demi</h3>
+                                <p>Vlada Fotko Course</p>
+                                <time datetime="2026">2026</time>
+                            </header>
+                            <div class="review-card__body">
+                                <p>I can't say enough amazing things about my dance instructor. After just four classes, I already feel a shift — not just in my movement, but in my confidence and emotional expression. Every hour I spend with her is a chance to lock in, let go, and grow.</p>
+                                <p>She challenges me in the best way possible. She doesn't let you settle — she pushes you to strive for your personal best and to reach for perfection, and somehow she does it with so much grace and encouragement. Her energy is magnetic, her skills are unmatched, and the way she leads is truly inspiring.</p>
+                            </div>
+                        </article>
+
+                        <article class="review-card review-card--video" hidden>
+                            <header>
+                                <h3>Maya</h3>
+                                <p>Vlada Fotko Course</p>
+                                <time datetime="2026">2026</time>
+                            </header>
+                            <div class="review-card__body">
+                                <video class="review-card__video" controls playsinline preload="metadata">
+                                    <source src="./assets/review-video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </article>
+
+                        <article class="review-card" hidden>
+                            <header>
+                                <h3>Ellie</h3>
+                                <p>Vlada Fotko Course</p>
+                                <time datetime="2026">2026</time>
+                            </header>
+                            <div class="review-card__body">
+                                <p>Taking your dance classes has genuinely changed my life. You created a space where I felt safe to explore my sensuality, reconnect with my body, and move with intention and confidence. Every class felt like a healing ritual, where sweat, sexiness, and movement melted away old shame and self-doubt. You didn't just teach me choreography, you taught me how to take up space unapologetically, how to see my curves as powerful, and how to fall in love with myself again. I'm forever grateful for you, Vlada!</p>
+                            </div>
+                        </article>
+
+                        <article class="review-card review-card--video" hidden>
+                            <header>
+                                <h3>Sofia</h3>
+                                <p>Vlada Fotko Course</p>
+                                <time datetime="2026">2026</time>
+                            </header>
+                            <div class="review-card__body">
+                                <video class="review-card__video" controls playsinline preload="metadata">
+                                    <source src="./assets/review-video-second.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </article>
+
+                        <article class="review-card" hidden>
+                            <header>
+                                <h3>Natalia</h3>
+                                <p>Vlada Fotko Course</p>
+                                <time datetime="2026">2026</time>
+                            </header>
+                            <div class="review-card__body">
+                                <p>I am very grateful for you, Vlada. You are an amazing teacher. I just wanted to tell you this. Maybe for someone dancing is easier, but for me, it was so psychological that looking in that mirror terrified me. I can tell by the last videos how my attitude changed, because I started smiling in those videos even with all my fuck ups. I will never take for granted how much you push me out of my comfort zone and that way I am allowing people to see the other side of me. I will see you soon.</p>
+                            </div>
+                        </article>
+                    </div>
 
                     <div class="reviews__controls" aria-label="Review navigation">
-                        <button type="button" aria-label="Previous review" disabled>
+                        <button type="button" aria-label="Previous review">
                             <svg viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <ellipse cx="32.4209" cy="32.4213" rx="32.4209" ry="32.4213" fill="white"/>
                                 <path d="M19.8643 32.4214L32.3643 25.2045L32.3643 39.6383L19.8643 32.4214ZM46 32.4214L46 33.6714L31.1143 33.6714L31.1143 32.4214L31.1143 31.1714L46 31.1714L46 32.4214Z" fill="black"/>
                             </svg>
                         </button>
-                        <button type="button" aria-label="Next review" disabled>
+                        <button type="button" aria-label="Next review">
                             <svg viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <ellipse cx="32.4209" cy="32.4213" rx="32.4209" ry="32.4213" transform="rotate(-180 32.4209 32.4213)" fill="white"/>
                                 <path d="M44.9775 32.4212L32.4775 39.638L32.4775 25.2043L44.9775 32.4212ZM18.8418 32.4211L18.8418 31.1711L33.7275 31.1712L33.7275 32.4212L33.7275 33.6712L18.8418 33.6711L18.8418 32.4211Z" fill="black"/>
