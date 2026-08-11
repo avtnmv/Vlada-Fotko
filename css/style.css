@@ -96,6 +96,7 @@ a {
 }
 
 .site-nav__reviews {
+    color: var(--color-accent);
     font-family: "Lora", Georgia, serif;
     transform: translateY(-2px);
 }
