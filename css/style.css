@@ -894,13 +894,18 @@ a {
     margin-top: clamp(14px, 1.25vw, 24px);
 }
 
+.review-card--video {
+    height: auto;
+}
+
 .review-card__video {
     display: block;
     width: 100%;
-    height: clamp(145px, 13.542vw, 260px);
+    height: auto;
+    aspect-ratio: 762 / 684;
     border-radius: 5px;
-    object-fit: contain;
-    background: #000000;
+    object-fit: cover;
+    background: transparent;
 }
 
 .reviews__controls {
