@@ -829,6 +829,8 @@ a {
 
 .reviews__track {
     width: min(100%, 550px);
+    display: grid;
+    place-items: center;
 }
 
 .review-card {
@@ -1298,13 +1300,18 @@ a {
     }
 
     .why-heels {
-        min-height: clamp(740px, 218.421vw, 830px);
+        min-height: 0;
+        padding-top: 27px;
+        display: flex;
+        flex-direction: column;
     }
 
     .why-heels__lead {
-        top: 27px;
-        left: 18px;
+        position: relative;
+        top: auto;
+        left: auto;
         width: 175px;
+        margin-left: 18px;
         line-height: 0.9;
     }
 
@@ -1318,15 +1325,17 @@ a {
     }
 
     .why-heels__text {
-        top: 96px;
+        position: relative;
+        top: auto;
         right: auto;
-        left: 18px;
+        left: auto;
         width: calc(100% - 36px);
-        height: 330px;
+        height: auto;
+        margin: 8px 18px 0;
         display: grid;
-        grid-template-columns: minmax(0, 1.29fr) minmax(0, 1fr);
-        column-gap: 40px;
-        overflow: hidden;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: clamp(18px, 6vw, 36px);
+        overflow: visible;
         line-height: 0.88;
         text-align: left;
     }
@@ -1340,9 +1349,12 @@ a {
     }
 
     .why-heels__art {
+        position: relative;
         left: -1px;
-        bottom: 37px;
+        bottom: auto;
         width: 400px;
+        margin-top: 20px;
+        flex: 0 0 auto;
         transform: none;
     }
 
@@ -1521,7 +1533,7 @@ a {
     }
 
     .review-card {
-        width: 250px;
+        width: min(250px, 100%);
         min-height: 217px;
         padding: 12px 13px;
         border-radius: 5px;
