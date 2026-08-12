@@ -404,6 +404,7 @@ a {
 }
 
 .why-heels__caption {
+    display: none;
     right: var(--page-gutter);
     bottom: clamp(12px, 1.042vw, 20px);
     font-size: clamp(10px, 0.625vw, 12px);
@@ -896,6 +897,10 @@ a {
 }
 
 .review-card--video {
+    height: auto;
+}
+
+.review-card--long {
     height: auto;
 }
 
