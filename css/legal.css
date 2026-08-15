@@ -44,9 +44,6 @@ a {
     min-height: 100vh;
     margin-inline: auto;
     padding: clamp(24px, 2.083vw, 40px);
-    display: grid;
-    grid-template-columns: minmax(420px, 38%) minmax(0, 1fr);
-    gap: clamp(60px, 5.208vw, 100px);
 }
 
 .legal-page__title {
@@ -62,7 +59,8 @@ a {
 
 .legal-page__content {
     width: min(100%, 980px);
-    padding-top: clamp(120px, 7.813vw, 150px);
+    margin-top: 90px;
+    margin-left: auto;
     padding-bottom: clamp(60px, 5.208vw, 100px);
     display: grid;
     gap: clamp(46px, 3.125vw, 60px);
@@ -113,7 +111,6 @@ a {
 @media (max-width: 700px) {
     .legal-page {
         padding: 10px;
-        display: block;
     }
 
     .legal-page__title {
@@ -128,7 +125,7 @@ a {
     .legal-page__content,
     .legal-page__content--columns {
         width: 100%;
-        padding: 90px 0 50px;
+        padding: 0 0 50px;
         display: grid;
         grid-template-columns: 1fr;
         gap: 34px;
