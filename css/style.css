@@ -1066,7 +1066,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: clamp(80px, 6.25vw, 120px);
+    gap: 130px;
 }
 
 .site-footer a {
