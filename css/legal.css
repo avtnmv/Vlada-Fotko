@@ -61,7 +61,7 @@ a {
 }
 
 .legal-page__content {
-    width: min(100%, 1060px);
+    width: min(100%, 980px);
     padding-top: clamp(120px, 7.813vw, 150px);
     padding-bottom: clamp(60px, 5.208vw, 100px);
     display: grid;
@@ -88,8 +88,12 @@ a {
 
 .legal-section p,
 .legal-section li {
-    font-size: clamp(12px, 0.729vw, 14px);
+    font-size: 20px;
     line-height: 1.08;
+}
+
+.legal-section strong {
+    font-weight: 700;
 }
 
 .legal-section p + p,
@@ -137,7 +141,7 @@ a {
 
     .legal-section p,
     .legal-section li {
-        font-size: 10px;
+        font-size: 14px;
         line-height: 1.08;
     }
 
